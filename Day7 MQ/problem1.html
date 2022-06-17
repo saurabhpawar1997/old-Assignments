@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            width: 96%;
+            height: 80px;
+            background-color: yellow;
+            font-size: 50px;
+            margin: auto;
+        }
+        #block{
+            display: flex;
+            margin-top: 40px;
+        }
+        #block>div{
+            width: 46%;
+            height: 500px;
+            margin: auto;
+        }
+        #block >  :first-child{
+            background-color: red;
+        }
+        #block >  :nth-child(2) {
+            background-color: green;
+        }
+        @media screen and (min-width:480px ) and (max-width:740px){
+        
+            #block{
+            flex-direction : column ;
+            margin: auto;
+        }
+        #block>div{
+            width: 94%;
+            height: 250px;
+            margin: auto;
+            margin-top: 25px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="nav">Navigation</div>
+    <div id="block">
+        <div>left Box</div>
+        <div>right Box</div>
+    </div>
+    
+</body>
+</html>
